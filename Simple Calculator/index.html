@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
+   </head>
+        
+        <title>Simple Calc</title>
+
+      <body onload="changeScreenSize(250,350)">
+
+    
+        <div id = "calculator">
+    
+
+        <form>
+            <input type = "text" id="miniscreen" disabled> <br>
+            
+            <input type="button" value="1" id = "keys" onclick= "addText('1')">  
+            <input type="button" value="2" id = "keys" onclick= "addText('2')"> 
+            <input type="button" value="3" id = "keys" onclick= "addText('3')"> 
+            <input type="button" id = "operations" value="+" onclick="addText('+')"> <br>
+            
+            <input type="button" value="4" id = "keys" onclick= "addText('4')">  
+            <input type="button" value="5" id = "keys" onclick= "addText('5')">  
+            <input type="button" value="6" id = "keys" onclick= "addText('6')"> 
+            <input type="button" id = "operations" value="-" onclick="addText('-')"> <br>
+            
+            <input type="button" value="7" id = "keys" onclick= "addText('7')"> 
+            <input type="button" value="8" id = "keys" onclick= "addText('8')"> 
+            <input type="button" value="9" id = "keys" onclick= "addText('9')"> 
+            <input type="button" id = "operations" value="/" onclick="addText('/')"> <br> 
+                  
+            <input type="button" value="0" id = "keys" onclick= "addText('0')"> 
+            <input type="button" id="keys" value="C" onclick = "addText('C')"> 
+            <input type="button" id="equal" value="=" onclick="solve()"> 
+            <input type="button" id = "operations" value="*" onclick="addText('*')"> <br>  
+                 
+        </form>
+            
+            <script src = "scripts.js"></script>
+            </div>
+
+</html>
+
